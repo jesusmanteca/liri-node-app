@@ -42,14 +42,19 @@ if (command === "concert-this"){
     console.log(" ")
     
     // this is where the Spotify command goes
-        spotify
-    .search({ type: 'tracks', query: query })
-    .then(function(response) {
-        console.log(response);
-    })
-    .catch(function(err) {
-        console.log(err);
-    });
+    spotify.search({ type: 'track', query: query }, function(err, data) {
+        if (err) {
+          return console.log('Error occurred: ' + err);
+        }
+       
+      console.log(data.tracks.items[0]); 
+      console.log(" ")
+      console.log("***************")
+      console.log(data.tracks.items[0].artists[0].name);
+      console.log(data.tracks.items[0].name);
+      console.log(data.tracks.items[0].external_urls.spotify);
+      console.log(data.tracks.items[0].album.name);
+      });
     //
     
    
