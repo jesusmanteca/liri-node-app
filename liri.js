@@ -37,6 +37,7 @@ if (command === "concert-this"){
 
 } else if (command === "spotify-this-song") {
     var query = process.argv[3];
+
     console.log(" ")
     console.log("**********You have chosen to Spotify the song.**********")
     console.log(" ")
@@ -47,19 +48,22 @@ if (command === "concert-this"){
           return console.log('Error occurred: ' + err);
         }
        
-      console.log(data.tracks.items[0]); 
+    //   console.log(data.tracks.items[0]); 
       console.log(" ")
       console.log("***************")
-      console.log(data.tracks.items[0].artists[0].name);
-      console.log(data.tracks.items[0].name);
-      console.log(data.tracks.items[0].external_urls.spotify);
-      console.log(data.tracks.items[0].album.name);
+      console.log("Artist: " + data.tracks.items[0].artists[0].name);
+      console.log("Song Title: " + data.tracks.items[0].name);
+      console.log("Album Name: " + data.tracks.items[0].album.name);
+      console.log(" ")
+      console.log("Link: " + data.tracks.items[0].external_urls.spotify);
+      console.log("***************")
+      console.log(" ")
       });
     //
     
    
       
-
+    "The Sign"
 
 
 } else if (command === "movie-this") {
