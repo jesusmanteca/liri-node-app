@@ -15,6 +15,7 @@ var command = process.argv[2]
 var keyword = process.argv[3]
 
 function search() {
+  log()
   if (command === "concert-this") {
     var artist =  keyword
     console.log("__________________________________________________")
@@ -149,5 +150,10 @@ function search() {
 
 search()
 
+function log() {
+  fs.appendFile('log.txt', command + ", " + keyword + ", ", 'utf8', function(err){
+  })
+}
 
+// Make sure you append each command you run to the log.txt file.
 
