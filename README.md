@@ -15,7 +15,9 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 ###### Venue location
 ###### Date of the Event (use moment to format this as "MM/DD/YYYY")
 ###### EXAMPLE: Concert Example
-![lizzo search](./images/"concert-this" Lizzo.png)
+![Lizzo search](/images/concert-this.png)
+
+
 >node liri.js spotify-this-song '<song name here>'
 
 ###### Artist(s)
@@ -25,8 +27,9 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 ###### If no song is provided then your program will default to "The Sign" by Ace of Base.
 
 ###### EXAMPLE: Song Example
-
+![Another Story search](/images/spotify-this-song.png)
 >node liri.js movie-this '<movie name here>'
+
 
 ###### Title of the movie.
 ###### Year the movie came out.
@@ -39,7 +42,13 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 ###### If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
 
 ###### EXAMPLE: Movie Example
-
+![Big Fish search](/images/movie-this.png)
 >node liri.js do-what-it-saysz
 
 ###### Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
+![Random.txt search](/images/do-what-it-says.png)
+
+###### BONUS: In addition to logging the data to your terminal/bash window, output the data to a .txt file called log.txt.
+###### Make sure you append each command you run to the log.txt file.
+###### Do not overwrite your file each time you run a command.
+![Random.txt search](/images/bonus-log.png)
