@@ -15,7 +15,7 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 ###### Venue location
 ###### Date of the Event (use moment to format this as "MM/DD/YYYY")
 ###### EXAMPLE: Concert Example
-
+![lizzo search](./images/"concert-this" Lizzo.png)
 >node liri.js spotify-this-song '<song name here>'
 
 ###### Artist(s)
